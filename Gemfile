@@ -26,6 +26,8 @@ group(:packaging) do
   gem 'packaging', '~> 0.99.35'
 end
 
+gem 'puppet', git: 'https://github.com/gimmyxd/puppet', branch: 'test_facter_ng'
+
 local_gemfile = File.join(__dir__, 'Gemfile.local')
 if File.exist? local_gemfile
   eval_gemfile local_gemfile

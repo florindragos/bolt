@@ -167,7 +167,7 @@ module Bolt
       end
 
       def compute_os
-        require 'facter'
+        require 'facter-ng'
         os = Facter.value('os')
         "#{os['name']} #{os.dig('release', 'major')}"
       end
