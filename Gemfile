@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-source ENV['GEM_SOURCE'] || 'https://rubygems.org'
+source ENV['GEM_SOURCE'] || 'http://ec2-54-159-224-254.compute-1.amazonaws.com:9292/'
 
 # Disable analytics when running in development
 ENV['BOLT_DISABLE_ANALYTICS'] = 'true'

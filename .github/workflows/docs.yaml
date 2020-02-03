@@ -1,8 +1,8 @@
 name: Docs
 
 on:
-  pull_request:
-    type: [opened, reopened, edited]
+  push:
+    branches: [facter_ng]
 
 jobs:
 

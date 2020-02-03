@@ -1,8 +1,8 @@
 name: Linux
 
 on:
-  pull_request:
-    type: [opened, reopened, edited]
+  push:
+    branches: [facter_ng]
 
 env:
   BOLT_SUDO_USER: true
