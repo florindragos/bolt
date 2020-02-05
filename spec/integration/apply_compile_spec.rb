@@ -132,7 +132,6 @@ describe "passes parsed AST to the apply_catalog task" do
     end
 
     it 'evaluates a node definition matching the node name' do
-      pending "puppet does not allow node definitions in plans"
       result = run_cli_json(%w[plan run basic::node_definition] + config_flags)
       report = result[0]['result']['report']
       warn = report['catalog']['resources'].select { |r| r['type'] == 'Warn' }
@@ -140,7 +139,6 @@ describe "passes parsed AST to the apply_catalog task" do
     end
 
     it 'evaluates a default node definition if none matches the node name' do
-      pending "puppet does not allow node definitions in plans"
       result = run_cli_json(%w[plan run basic::node_default] + config_flags)
       report = result[0]['result']['report']
       warn = report['catalog']['resources'].select { |r| r['type'] == 'Warn' }
